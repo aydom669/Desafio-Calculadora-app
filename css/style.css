@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  color: #444b5a;
+  font-weight: 700; }
+
+body {
+  width: 100%;
+  max-width: 1400px;
+  background-color: #3a4764;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  body.active_1 {
+    background-color: #e6e6e6; }
+    body.active_1 .calc__btn {
+      background: #d1cccc; }
+    body.active_1 .main__toggle h3 {
+      color: #111; }
+    body.active_1 .main__toggle .main__opcao p {
+      color: #111; }
+    body.active_1 .main__controle p {
+      color: #111; }
+    body.active_1 .main__controle .theme__box {
+      background: #d1cccc; }
+      body.active_1 .main__controle .theme__box .theme__circulo {
+        background-color: #ca5502; }
+    body.active_1 .screen {
+      width: 450px; }
+      body.active_1 .screen #screen {
+        background-color: #ededed;
+        color: #111; }
+    body.active_1 .calc__btn .del, body.active_1 .calc__btn .reset {
+      box-shadow: 0px 3px 0px 0px #a69d91;
+      background-color: #377f86; }
+    body.active_1 .calc__btn .equal {
+      box-shadow: 0px 3px 0px 0px #893901;
+      background-color: #ca5502; }
+    body.active_1 .calc__btn button {
+      box-shadow: 0px 3px 0px 0px #a69d91; }
+  body.active_2 {
+    background-color: #160628; }
+    body.active_2 .main__toggle h3 {
+      color: #ffe53d; }
+    body.active_2 .main__opcao p {
+      color: #ffe53d; }
+    body.active_2 .main__controle p {
+      color: #ffe53d; }
+    body.active_2 .main__controle .theme__box #theme__circulo {
+      background-color: #00e0d1; }
+    body.active_2 .screen {
+      width: 450px; }
+      body.active_2 .screen #screen {
+        background-color: #1d0934;
+        color: #ffe53d; }
+    body.active_2 .calc__btn {
+      background: #1d0934; }
+      body.active_2 .calc__btn .del, body.active_2 .calc__btn .reset {
+        box-shadow: 0px 3px 0px 0px #871c9c;
+        background-color: #341c4f;
+        color: #fff; }
+      body.active_2 .calc__btn .equal {
+        box-shadow: 0px 3px 0px 0px #6cf9f2;
+        background-color: #00e0d1;
+        color: #fff; }
+      body.active_2 .calc__btn button {
+        box-shadow: 0px 3px 0px 0px #341c4f;
+        background-color: #871c9c;
+        color: #ffe53d; }
+
+.main__toggle {
+  display: flex;
+  justify-content: space-between; }
+  .main__toggle h3 {
+    color: #fff; }
+  .main__toggle p {
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer; }
+  .main__toggle .main__opcao {
+    display: flex;
+    justify-content: flex-end; }
+
+.main__controle {
+  display: flex;
+  justify-content: flex-end; }
+  .main__controle p {
+    color: #FFF;
+    cursor: pointer;
+    margin-right: 4px; }
+  .main__controle .theme__box {
+    width: 60px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: #182034;
+    margin-left: 4px;
+    position: relative; }
+    .main__controle .theme__box .theme__circulo {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+      background: #d03f2f;
+      border-radius: 30px; }
+
+.screen {
+  width: 450px; }
+  .screen #screen {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    text-align: right;
+    background-color: #182034;
+    outline: none;
+    border-radius: 7px;
+    font-size: 30px;
+    color: #fff;
+    border: 0; }
+
+.calc__btn {
+  display: flex;
+  width: 450px;
+  flex-flow: wrap;
+  background-color: #182034;
+  padding: 10px 5px;
+  margin: 8px;
+  border-radius: 7px; }
+  .calc__btn .del, .calc__btn .reset {
+    box-shadow: 0px 3px 0px 0px #404e72;
+    background-color: #637097;
+    font-size: 16px;
+    color: #fff; }
+  .calc__btn .reset, .calc__btn .equal {
+    width: 200px;
+    color: #fff;
+    font-size: 16px; }
+  .calc__btn .equal {
+    box-shadow: 0px 3px 0px 0px #93261a;
+    background-color: #d03f2f; }
+  .calc__btn button {
+    width: 90px;
+    padding: 15px;
+    outline: none;
+    box-shadow: 0px 3px 0px 0px #b4a597;
+    font-size: 25px;
+    margin: 10px 10px; }
+
+/*# sourceMappingURL=style.css.map */

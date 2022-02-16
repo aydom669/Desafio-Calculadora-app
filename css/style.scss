@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+// Variaveis
+
+    $mainbgcolor: hsl(222, 26%, 31%);
+	$mainbg1color: hsl(0, 0%, 90%);
+	$mainbg2color: hsl(268, 75%, 9%);
+	$twotkbg: hsl(0, 5%, 81%);
+	$tbgkbgsbg: hsl(268, 71%, 12%);
+
+// Variaveis End
+
+// Reset
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(221, 14%, 31%);
+    font-weight: 700;
+}
+
+// Reset End
+
+// body 
+
+body{
+    width: 100%;
+    max-width: 1400px;
+    background-color: $mainbgcolor;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    //Segunda opcao de calculadora
+
+    &.active_1{
+        background-color: $mainbg1color;
+
+        .calc__btn{
+            background: $twotkbg;
+        }
+
+        .main__toggle{
+
+            h3{
+                color: #111;
+            }
+
+            .main__opcao{
+
+                p{
+                    color: #111;
+                }
+            }
+        }
+
+        .main__controle{
+
+            p{
+                color: #111;
+            }
+
+            .theme__box{
+                background: $twotkbg;
+
+                .theme__circulo{
+                    background-color: hsl(25, 98%, 40%);
+                }
+            }
+        }
+        .screen{
+
+            width: 450px;
+    
+            #screen{
+                background-color: hsl(0, 0%, 93%);
+                color: #111;
+            }
+    
+        }
+
+        .calc__btn{
+
+            .del,.reset{
+                box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+            	background-color: hsl(185, 42%, 37%);
+            }
+
+            .equal{
+                box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
+                background-color: hsl(25, 98%, 40%);
+            }
+
+            button{
+                box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
+            }
+        }
+    }
+
+     //Segunda opcao de calculadora End
+
+     //Terceira opcao de calculadora
+
+    &.active_2{
+        background-color: $mainbg2color;  
+
+        .main__toggle{
+
+            h3{
+                color: hsl(52, 100%, 62%);
+            }
+        }
+
+        .main__opcao{
+
+            p{
+                color: hsl(52, 100%, 62%);
+            }
+        }
+
+        .main__controle{
+           
+            p{
+                color: hsl(52, 100%, 62%);
+            }
+            .theme__box{
+                
+
+                #theme__circulo{
+                    background-color: hsl(176, 100%, 44%);
+                }
+            }
+        }
+
+        .screen{
+
+            width: 450px;
+    
+            #screen{
+                background-color: $tbgkbgsbg;
+                color: hsl(52, 100%, 62%);
+            }
+    
+        }
+
+        .calc__btn{
+
+            background: $tbgkbgsbg;
+
+            
+            .del,.reset{
+                box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
+                background-color: hsl(268, 47%, 21%);
+                color: #fff;
+            }
+
+            .equal{
+                box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
+                background-color: hsl(176, 100%, 44%);
+                color: #fff;
+            }
+
+            button{
+                box-shadow: 0px 3px 0px 0px hsl(268, 47%, 21%);
+                background-color: hsl(290, 70%, 36%);
+                color: hsl(52, 100%, 62%);
+            }
+        }
+    }
+
+     //Terceira opcao de calculadora End
+}
+
+// body End
+
+// Topo da calcula
+
+    .main__toggle{
+        display: flex;
+        justify-content: space-between;
+
+        h3{
+            color: #fff;
+        }
+
+        p{
+            color: #fff;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .main__opcao{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+// Topo da calcula End
+
+// main Control
+
+.main__controle{
+    display: flex;
+    justify-content: flex-end;
+
+    p{
+        color: #FFF;
+	    cursor: pointer;
+	    margin-right: 4px;
+    }
+
+    .theme__box{
+        width: 60px;
+        height: 15px;
+        border-radius: 30px;
+        background-color:  hsl(224, 36%, 15%);
+        margin-left: 4px;
+        position: relative;
+
+        .theme__circulo{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            z-index: 1;
+            background:  hsl(6, 63%, 50%);
+            border-radius: 30px;
+        }
+    }
+}
+
+// main Control End
+
+// Screen
+
+    .screen{
+
+        width: 450px;
+
+        #screen{
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
+            text-align: right;
+            background-color: hsl(224, 36%, 15%);
+            outline: none;
+            border-radius: 7px;
+            font-size: 30px;
+            color: #fff;
+            border: 0;
+        }
+
+    }
+
+// Screen End
+
+// calculadora botoes
+
+    .calc__btn{
+
+        display: flex;
+        width: 450px;
+        flex-flow: wrap;
+        background-color: hsl(224, 36%, 15%);
+        padding: 10px 5px;
+        margin: 8px;
+        border-radius: 7px;
+
+        .del,.reset{
+            box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+	        background-color: hsl(225, 21%, 49%);
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .reset,.equal{
+            width: 200px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .equal{
+            box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+        	background-color: hsl(6, 63%, 50%);
+        }
+
+        button{
+            width: 90px;
+            padding: 15px;
+            outline: none;
+            box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
+            font-size: 25px;
+            margin: 10px 10px;
+        }
+    }
+
+// calculadora botoes
+
+
+
+    
+    
